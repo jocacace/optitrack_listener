@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<launch>
+	<node pkg="optitrack_listener" name="optitrack_listener" type="optitrack_listener" output="screen">
+		<param name="port" value="9030" type="int" />
+		<param name="blocking" value="false" type="bool" />
+		<param name="debug" value="false" type="bool" />
+		
+		<param name="output_topic_name" type="string" value="/mavros/vision_pose/pose"/>
+		<!--
+		<param name="output_ref_frame" type="string" value="ned" />
+		-->
+		<param name="output_ref_frame" type="string" value="enu" />
+
+	</node>
+</launch>

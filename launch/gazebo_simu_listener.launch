@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<launch>
+	<node pkg="optitrack_listener" name="simu_optitrack_listener" type="simu_optitrack_listener" output="screen">
+		<param name="model_name" type="string" value="iris" />
+		<param name="output_topic_name" type="string" value="/mavros/vision_pose/pose"/>
+		<param name="output_ref_frame" type="string" value="enu" />
+		<param name="publish_odom_pose" value="false" />
+	</node>
+</launch>

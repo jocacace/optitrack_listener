@@ -1,0 +1,51 @@
+plugin_blacklist:
+# common
+- safety_area
+- 3dr_radio
+- altitude
+- dummy
+- ftp
+- hil
+- home_position
+- adsb
+- local_position
+- param
+- setpoint_accel
+- setpoint_position
+- sys_time
+- vfr_hud
+- debug_value
+- fake_gps
+- sar_gs_data
+
+# extras
+- image_pub
+- vibration
+- distance_sensor
+- rangefinder
+- cam_imu_sync
+- px4flow
+- vision_pose_estimate
+- vision_speed_estimate
+- odom
+
+
+#Already used
+- rc_io
+#- setpoint_attitude
+#- setpoint_raw
+- setpoint_velocity
+#- sys_status
+- waypoint
+- sar_drone_data
+#- mocap_pose_estimate
+- manual_control
+#- imu
+- global_position
+#- command
+- actuator_control
+
+plugin_whitelist: []
+# 'sys_*'
+
+
