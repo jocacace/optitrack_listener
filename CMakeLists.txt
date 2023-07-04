@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   tf
 	gazebo_msgs
+  nav_msgs
 )
 
 
@@ -142,4 +143,7 @@ target_link_libraries(optitrack_listener ${catkin_LIBRARIES} )
 
 add_executable(simu_optitrack_listener src/gazebo_simu_listener.cpp)
 target_link_libraries(simu_optitrack_listener ${catkin_LIBRARIES} )
+
+add_executable(simu_optitrack_listener_new src/gazebo_simu_odom.cpp)
+target_link_libraries(simu_optitrack_listener_new ${catkin_LIBRARIES} )
 
